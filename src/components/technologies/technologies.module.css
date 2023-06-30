@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    bottom: 10vw;
+}
+
+.title{
+    font-size: 4vw;
+    position: absolute;
+    top: 30vh;
+}
+
+.subTitles{
+    font-size: 2vw;
+    position: absolute;
+    top: 38vh;
+}
+
+.sliderImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unSelectedImages > img{
+    height: 20vw;
+    max-width: 50vw;
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+    transition: 1s;
+    position: absolute;
+    top: 48vh;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.inputs{
+    position: relative;
+    top: 10vw;
+    z-index: 50;
+    top: 25vw;
+    margin-left: 1vw;
+}
+
+.inputs:checked + img{
+    padding: 1vw;
+    max-width: 50vw;
+    width: 100%;
+    opacity: 1;
+    transition:1s;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: 8vw;
+    }
+    .subTitles{
+        font-size: 3vw;
+        top: 36vh;
+    }
+    .unSelectedImages > img{
+        top: 46vh;
+        height: 50vw;
+        width: 50vw;
+        border-radius: 1vw;
+    }
+    .inputs{
+        top: 40vh;
+    }
+}

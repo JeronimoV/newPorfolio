@@ -1,0 +1,346 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondContainer{
+    height: 100vh;
+    width: 100vw;
+}
+
+.textContainer{
+    width: 70vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40vh;
+}
+
+.textContainer h1{
+    font-size: 5vw;
+    margin: 0;
+}
+
+.textContainer h2{
+    margin: 0;
+    font-size: 3vw;
+}
+
+.image{
+    height: 40vw;
+    width: 40vw;
+    object-fit: cover;
+    float: right;
+}
+
+.button{
+    height: 10vw;
+    width: 50vw;
+    max-height: 1vw;
+    max-width: 10vw;
+    background-color: #e45826;
+    border-radius: 0.4vw;
+    margin: 2vw;
+    transition: 1s;
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+    transition: max-width 1s 1s, max-height 1s ;
+    cursor: pointer;
+}
+
+.buttonTitle{
+    margin: 1vw;
+    opacity: 1;
+    transition: 0.1s 1s;
+    font-size: 1vw;
+}
+
+.buttonText{
+    height: fit-content;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+    position: relative;
+    bottom: 2vw;
+}
+
+.hiddenButtonTitle{
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+    position: relative;
+    bottom: 3vw;
+    transition: 1s;
+}
+
+.button:hover{
+    max-width: 35vw;
+    max-height: 30vw;
+    transition: max-width 1s, max-height 1s 1s;
+}
+
+.button:hover > .buttonTitle{
+    opacity: 0;
+}
+
+.button:hover > .buttonText{
+    height: fit-content;
+    max-height: 30vw;
+    opacity: 1;
+    font-size: 1vw;
+}
+
+.button:hover > .hiddenButtonTitle{
+    max-height: 3vw;
+    opacity: 1;
+    font-size: 2vw;
+    transition: 1s 1.5s;
+}
+
+@media screen and (max-width: 1400px) {
+    .secondContainer{
+        height: 60vh;
+        width: 70vw;
+        background-color: #1b1a17;
+    }
+    .image{
+        height: 30vw;
+        width: 30vw;
+        float: right;
+    }
+    .textContainer{
+        top: 35vh;
+        left: 0vw;
+        width: 100%;
+    }
+    .textContainer h1{
+        position: absolute;
+        left: 21vw;
+        top: 1vh;
+    }
+    .textContainer h2{
+        position: absolute;
+        left: 26vw;
+        top: 10vh;
+        font-size: 2vw;
+    }
+    .button{
+        top: 13vh;
+        height: 60vw;
+        width: 60vw;
+        border-radius: 1vw;
+        max-height: 2vw;
+        max-width: 10vw;
+        position: relative;
+        right: 10vw;
+    }
+
+    .buttonText{
+        opacity: 0;
+        transition: 1s 1s;
+    }
+
+    .button:hover{
+        max-width: 34vw;
+        max-height: 15vw;
+        transition: max-width 1s, max-height 1s 1s;
+    }
+    
+    .button:hover > .buttonTitle{
+        opacity: 0;
+    }
+    
+    .button:hover > .buttonText{
+        height: fit-content;
+        max-height: 30vw;
+        opacity: 1;
+        font-size: 1vw;
+    }
+    
+    .button:hover > .hiddenButtonTitle{
+        opacity: 1;
+        font-size: 2vw;
+        transition: 1s 1.5s;
+        max-height: 50vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .secondContainer{
+        height: 40vh;
+        width: 70vw;
+        background-color: #1b1a17;
+    }
+    .image{
+        height: 30vw;
+        width: 30vw;
+        float: right;
+    }
+    .textContainer{
+        top: 38vh;
+        left: 0vw;
+        width: 100%;
+    }
+    .textContainer h1{
+        position: absolute;
+        left: 21vw;
+        top: 1vh;
+    }
+    .textContainer h2{
+        position: absolute;
+        left: 26vw;
+        top: 6vh;
+        font-size: 2vw;
+    }
+    .button{
+        top: 13vh;
+        height: 60vw;
+        width: 60vw;
+        border-radius: 1vw;
+        max-height: 2vw;
+        max-width: 10vw;
+        position: relative;
+        right: 10vw;
+    }
+
+    .buttonText{
+        opacity: 0;
+        transition: 1s 1s;
+    }
+
+    .button:hover{
+        max-width: 34vw;
+        max-height: 12vw;
+        transition: max-width 1s, max-height 1s 1s;
+    }
+    
+    .button:hover > .buttonTitle{
+        opacity: 0;
+    }
+    
+    .button:hover > .buttonText{
+        height: fit-content;
+        max-height: 30vw;
+        opacity: 1;
+        font-size: 1vw;
+    }
+    
+    .button:hover > .hiddenButtonTitle{
+        opacity: 1;
+        font-size: 2vw;
+        transition: 1s 1.5s;
+        max-height: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .secondContainer{
+        height: 60vh;
+        width: 70vw;
+        background-color: #1b1a17;
+    }
+    .image{
+        height: 30vw;
+        width: 30vw;
+        float: right;
+    }
+    .textContainer{
+        top: 25vh;
+        left: 0vw;
+        width: 100%;
+    }
+    .textContainer h1{
+        position: absolute;
+        left: 21vw;
+        top: 3vh;
+    }
+    .textContainer h2{
+        position: absolute;
+        left: 26vw;
+        top: 6vh;
+    }
+    .button{
+        top: 20vh;
+        margin: 0;
+        left: 1vw;
+        right: 0;
+        height: 60vw;
+        width: 60vw;
+        border-radius: 1vw;
+        max-height: 4vw;
+        max-width: 30vw;
+    }
+
+    .buttonText{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .button:hover{
+        max-width: 60vw;
+        max-height: 55vw;
+        transition: max-width 1s, max-height 1s 1s;
+    }
+    
+    .button:hover > .buttonTitle{
+        opacity: 0;
+    }
+    
+    .button:hover > .buttonText{
+        height: fit-content;
+        max-height: 30vw;
+        opacity: 1;
+        font-size: 3vw;
+        transition: 1s 1s;
+    }
+    
+    .button:hover > .hiddenButtonTitle{
+        opacity: 1;
+        font-size: 5vw;
+        transition: 1s 1.5s;
+        bottom: 8vw;
+        max-height: 50vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .secondContainer{
+        height: 50vh;
+        width: 70vw;
+        background-color: #1b1a17;
+    }
+    .textContainer{
+        top: 28vh;
+        left: 0vw;
+        width: 100%;
+    }
+    .textContainer h1{
+        position: absolute;
+        left: 21vw;
+        top: 3vh;
+    }
+    .textContainer h2{
+        position: absolute;
+        left: 26vw;
+        top: 6vh;
+    }
+    .button:hover{
+        max-width: 60vw;
+        max-height: 48vw;
+        transition: max-width 1s, max-height 1s 1s;
+    }
+}
