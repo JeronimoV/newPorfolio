@@ -3,6 +3,7 @@ html{
     color: white;
     overflow-x: hidden;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 *{

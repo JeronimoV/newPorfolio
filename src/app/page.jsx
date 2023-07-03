@@ -13,6 +13,7 @@ const Landing = () => {
                 <a href="#proyectos">Proyectos</a>
                 <a href="#contactos">Contacto</a>
             </div>
+            <a href="https://docs.google.com/document/d/15rjEUbrL5_iWrKdEIt9fGhejirGWhsBS/edit?usp=sharing&ouid=104513528692140047356&rtpof=true&sd=true" className={styles.downloadCV}>Descargar CV</a>
             <div id="inicio"><Presentation/></div>
             <div id="tecnologias"><Technologies/></div>
             <div id="proyectos"><Projects/></div>
