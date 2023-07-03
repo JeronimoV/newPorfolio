@@ -56,11 +56,24 @@
 @media screen and (max-width: 600px) {
     .navBar{
         width: 100%;
-        margin: 0;
+        height: 10vw;
+        margin: 0vw;
         border-radius: 0;
     }
     .navBar a{
         padding: 5vw;
         font-size: 3vw;
+    }
+    .downloadCV{
+        top: 20vw;
+        height: 6vw;
+        width: 30vw;
+        font-size: 2.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }

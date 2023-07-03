@@ -8,7 +8,7 @@ const Projects = () => {
                 <p className={styles.title}>Vizta (No responsive)</p>
                 <p className={styles.description}>Hice este proyecto con un grupo de 5 personas. Me dedique a la parte del Backend, al finalizar el Backend me pase al FrontEnd a terminar la aplicacion. Para resumir lo que es la aplicacion, seria un tipo de marketplace de Facebook, cada persona puede vender a los demas y nosotros actuamos solo como intermediarios y sin sacar ningun beneficio</p>
                 <div className={styles.tecnologias}>
-                    <img src="https://assets.stickpng.com/images/62a74f85223343fbc2207d05.png"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"/>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"/>
                     <img src="https://1000logos.net/wp-content/uploads/2020/08/PostgreSQL-Logo.png"/>
                 </div>
