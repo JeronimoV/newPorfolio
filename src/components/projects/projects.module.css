@@ -32,9 +32,8 @@
 }
 
 .description{
-    width: 20vw;
+    width: 100%;
     height: fit-content;
-    margin: 1vw;
     word-wrap: break-word;
     text-align: center;
     font-size: 1vw;
