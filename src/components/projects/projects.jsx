@@ -28,7 +28,6 @@ const Projects = () => {
                 </div>
                 <div className={styles.buttons}>
                     <a href="https://github.com/JeronimoV/Global-Click-Counter" className={styles.button}><img className={styles.buttonIMG} src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>GitHub</a>
-                    <a href="https://globalclickcounter.up.railway.app" className={styles.button}><img className={styles.buttonIMG} src="https://www.freepnglogos.com/uploads/logo-internet-png/logo-internet-the-internet-png-cones-download-gratuit-png-21.png"/>Deploy</a>
                 </div>
             </div>
             <div className={styles.card}>
@@ -43,7 +42,6 @@ Esta version que esta en el deploy sufrio un bug que solo te deja ver el primer 
                 </div>
                 <div className={styles.buttons}>
                     <a href="https://github.com/JeronimoV/wasap" className={styles.button}><img className={styles.buttonIMG} src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>GitHub</a>
-                    <a href="https://wasap-production-7c5f.up.railway.app/login" className={styles.button}><img className={styles.buttonIMG} src="https://www.freepnglogos.com/uploads/logo-internet-png/logo-internet-the-internet-png-cones-download-gratuit-png-21.png"/>Deploy</a>
                 </div>
             </div>
         </div>
